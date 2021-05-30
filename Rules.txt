@@ -1,0 +1,36 @@
+Rules
+The player is placed in a maze made up of high-voltage fences and posts. There are also some interceptor robots that
+will try to destroy the player. If the player touches the maze or any of these robots, that is the end of the game (and
+the player!). The robots are also destroyed when they touch the fences/posts or when they collide with each other.
+Every time the player moves in any direction (horizontally, vertically, or diagonally) to a contiguous cell, each robot
+moves one cell closer to the new player's location, in whichever direction is the shortest path. The robots have no
+vision sensors but they have an accurate odour sensor that allows them to follow the player!
+There is one hope: make the robots hit the maze or each other. If all of them are destroyed, the player wins. 
+
+
+1)The player can only move to one of the 8 neighbour cells of his/her current cell;
+  To move to each one of those cells you can do as follows:
+
+  Q     W     E
+  A   player  D
+  Z     X     C
+
+  You also have the option to stay in your current position by typing "S".
+
+2)You aren't allowed to move to cells that are occupied by destroyed robots;
+
+3)You can read the elements in the maze as follows:
+
+  + = Non-electrified post;
+  * = Electrical fence or post;
+  H = You(alive);
+  h = You(dead);
+  R = Robot(alive);
+  r = Robot(destroyed);
+  O = exit gate;
+
+4)If the robots hit either type of posts they get destroyed, they also get destroyed if they hit each other;
+
+5)You can exit the game at any moment by typing CTRL-Z, in Windows, or CTRL-D, in Linux;
+
+6)Have fun! :)
